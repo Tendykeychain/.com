@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panda 3D Keychain</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+    /* Left side - images */
+    .images {
+        flex: 1;
+        min-width: 100px;
+        padding: 10px;
+    }
+    .main-img img {
+        width:20%;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+    .thumbnails {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .thumbnails img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+    /* Right side - details */
+    .details {
+        flex: 1;
+        min-width: 300px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .price {
+        font-size: 24px;
+        font-weight: bold;
+        color: #111;
+    }
+    .rating {
+        background: #4caf50;
+        color: white;
+        display: inline-block;
+        padding: 2px 6px;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .size-selector {
+        margin-top: 15px;
+    }
+    .size-btn {
+        background: #e91e63;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .product-details {
+        margin-top: 20px;
+    }
+    .buttons {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .btn {
+        flex: 1;
+        padding: 12px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+   
+</style>
+<script>
+    function changeImage(src) {
+        document.getElementById('mainImage').src = src;
+    }
+</script>
+</head>
+<body>
+
+<div class="container">
+    <!-- Left side images -->
+    <div class="images">
+        <div class="main-img">
+            <img id="mainImage" src="panda.jpg" alt="Panda Keychain">
+        </div>
+
+
+    <!-- Right side details -->
+    <div class="details">
+        <h1>Panda 3D Rubber Keychain </h1>
+        <div class="price">₹130</div>
+
+        <div class="product-details">
+            <h3>Product Details</h3>
+            <p><strong>Name:</strong>Panda 3d Keychain</p>
+            <p><strong>Material:</strong> Rubber</p>
+            <p><strong>Net Quantity:</strong> 1</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
